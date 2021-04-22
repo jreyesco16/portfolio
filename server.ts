@@ -1,10 +1,11 @@
 import { serve } from "https://deno.land/std@0.91.0/http/server.ts";
-import porfolio from './portfolio.jsx';
 
-const server = serve({ port: 8090 });
+const server = serve({ port: 8080 });
 
-console.log("\nServing on http://localhost:8090/\n");
+console.log("\nServing on http://localhost:8080/\n");
 
 for await (const req of server) {
-  req.respond({ body: porfolio });
+  const html = await Deno.readFile('./portfolio.html');
+  const decoder = new TextDecoder()
+  req.respond({ body: decoder.decode(html) });
 }
