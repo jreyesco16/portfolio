@@ -31,6 +31,10 @@
             margin-top: 30px;
         }
 
+        .avatar {
+            display: none;
+        }
+
 
     </style>
 
@@ -38,10 +42,10 @@
         <link rel="stylesheet" href="portfolio.css">
     </head>
 
-    <body class="main">
+    <body class="main"  onload="getAvatar()">
         <br> <p>Jesse Reyes Cortes</p> <br>
 
-        <img src="IMG_3717.JPG" alt="pic"/>
+        <img alt="Avatar" id="avatar"/>
 
         <p>I was introduced to computer programming while attending college at the age of 19.<br>
            What really intrigued me about programming was that it gave me a place where I could express my passion for technology.<br>
@@ -75,6 +79,20 @@
         </div>
 
         <script>
+
+            async function getAvatar(){
+
+                const img = document.getElementById("avatar")
+
+                const avatar_path = "./IMG_3717.JPG";
+
+                console.log(avatar_path)
+
+                img.style.display = "revert"
+
+                img.src = avatar_path
+
+            }
             
         </script>
 

@@ -5,7 +5,26 @@ const server = serve({ port: 3000 });
 console.log("\nServing on http://localhost:3000/\n");
 
 for await (const req of server) {
-  const html = await Deno.readFile('./portfolio.html');
-  const decoder = new TextDecoder()
-  req.respond({ body: decoder.decode(html) });
+
+  console.log(req.url)
+
+  if(req.url == "/") {
+    const html = await Deno.readFile('./portfolio.html');
+    const decoder = new TextDecoder()
+    req.respond(
+      { 
+        body: decoder.decode(html)
+
+      }
+    );
+  }else if (req.url == "avatar"){
+    const avatar = await Deno.readFile("./IMG_3717.JPG");
+    const decoder = new TextDecoder()
+    req.respond(
+      {
+        headers: new Headers({"Content-type" : "image/png"}),
+        body: decoder.decode(avatar)
+      }
+    )
+  }
 }
