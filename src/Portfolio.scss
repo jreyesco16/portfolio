@@ -40,6 +40,7 @@
   float: left; 
   margin-left: 50px;
   margin-top: 5px;
+  font-family:monospace;
 }
 
 .section-status {
@@ -51,4 +52,33 @@
 .portfolio-footer {
   background-color: #2B65EC;
   margin-top: 30px;
+  display: inline-flex;
+  width: 100%;
+
+  .img-div {
+    width: 33%;
+    height: 100px;
+  }
+
+  .linkedin {
+    height: 100px;
+    width: 33%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  .github {
+    height: 100px;
+    width: 33%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  .leetcode {
+    height: 70px;
+    width: 33%;
+    margin-top: 10px;
+    margin-left: 30%;
+    margin-right: 530%;
+  }
 }

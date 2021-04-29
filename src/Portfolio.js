@@ -1,6 +1,9 @@
 import './Portfolio.scss';
 import avatar from "./portfolio-avatar.jpg"
 import {IoIosArrowDown} from 'react-icons/io'
+import linkedin from "./linkedin-logo.png"
+import github from "./github-logo.png"
+import leetcode from './leetcode-logo.png'
 
 function App() {
   return (
@@ -46,8 +49,16 @@ function App() {
         </div>
       </body>
 
-      <footer>
-
+      <footer className="portfolio-footer">
+        <div className="img-div">
+          <img className="linkedin" src={linkedin} alt="linkedin" href="https://www.linkedin.com/in/jessereyescortes0416/"/>
+        </div>
+        <div className="img-div">
+          <img className="github" src={github} alt="github" href="https://github.com/jreyesco16"/>
+        </div>
+        <div className="img-div">
+          <img className="leetcode" src={leetcode} alt="leetcode" href=""/>
+        </div>
       </footer>
 
     </div>
