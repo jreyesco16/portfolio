@@ -51,13 +51,19 @@ function App() {
 
       <footer className="portfolio-footer">
         <div className="img-div">
-          <img className="linkedin" src={linkedin} alt="linkedin" href="https://www.linkedin.com/in/jessereyescortes0416/"/>
+          <a href="https://www.linkedin.com/in/jessereyescortes0416/">
+            <img className="linkedin" src={linkedin} alt="linkedin" />
+          </a>
         </div>
         <div className="img-div">
-          <img className="github" src={github} alt="github" href="https://github.com/jreyesco16"/>
+          <a href="https://github.com/jreyesco16">
+            <img className="github" src={github} alt="github"/>
+          </a>
         </div>
         <div className="img-div">
-          <img className="leetcode" src={leetcode} alt="leetcode" href=""/>
+          <a href="https://leetcode.com/jreyesco16/">
+            <img className="leetcode" src={leetcode} alt="leetcode"/>
+          </a>
         </div>
       </footer>
 
