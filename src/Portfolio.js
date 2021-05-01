@@ -1,7 +1,7 @@
 import './Portfolio.scss';
 import React from 'react';
 import avatar from "./portfolio-avatar.jpg"
-import {IoIosArrowDown} from 'react-icons/io'
+import {IoIosArrowDown, IoIosArrowUp} from 'react-icons/io'
 import linkedin from "./linkedin-logo.png"
 import github from "./github-logo.png"
 import leetcode from './leetcode-logo.png'
@@ -13,12 +13,37 @@ class Portfolio extends React.Component {
 
   constructor(props) {
     super(props)
+    this.state = {
+      languages: false,
+      languages_status: <IoIosArrowDown/>,
+      languages_style: {display: "none"},
+      projects: false,
+      projects_status: <IoIosArrowDown/>,
+      projects_style: {display: "none"},
+      aboutme: false,
+      aboutme_status: <IoIosArrowDown/>,
+      aboutme_style: {display: "none"}
+    }
 
     this.dropdownChange = this.dropdownChange.bind(this)
   }
 
 dropdownChange (data) {
-  console.log(data)
+
+  if(data==="languages"){
+    this.setState({languages_style : {display: this.state.languages ? "none" : "revert"}})
+    this.setState({languages_status: this.state.languages ? <IoIosArrowDown/> : <IoIosArrowUp/>})
+    this.setState({languages : this.state.languages ? false : true})
+  }else if(data==="projects"){
+    this.setState({projects_style : {display: this.state.projects ? "none" : "revert"}})
+    this.setState({projects_status: this.state.projects ? <IoIosArrowDown/> : <IoIosArrowUp/>})
+    this.setState({projects : this.state.projects ? false : true})
+  }else if(data==="aboutme"){
+    this.setState({aboutme_style : {display: this.state.aboutme ? "none" : "revert"}})
+    this.setState({aboutme_status: this.state.aboutme ? <IoIosArrowDown/> : <IoIosArrowUp/>})
+    this.setState({aboutme : this.state.aboutme ? false : true})
+    
+  }
 }
 
 
@@ -44,27 +69,27 @@ dropdownChange (data) {
 
           <div className="portfolio-section"> 
               <div className="section-title"> Computer Languages </div>
-              <div className="section-status" onClick={() => this.dropdownChange("languages")}> <IoIosArrowDown/> </div>
+              <div className="section-status" onClick={() => this.dropdownChange("languages")}> {this.state.languages_status} </div>
           </div>
-          {/* <div className="dropdown"> */}
-            <div className="languages">
-              JavaScript; HTML; Java
-            </div>
-          {/* </div> */}
+          <div className="languages" style={this.state.languages_style}>
+            JavaScript; HTML; Java
+          </div>
 
           <div className="portfolio-section">
               <div className="section-title"> Projects </div>
-              <div className="section-status" onClick={() => this.dropdownChange("projects")}> <IoIosArrowDown/> </div>
+              <div className="section-status" onClick={() => this.dropdownChange("projects")}> {this.state.projects_status} </div>
           </div>
-          <div className="projects">
-
+          <div className="projects" style={this.state.projects_style}>
+            Invoice System; Yahtzee Online; The Open Market
           </div>
 
           <div className="portfolio-section">
               <div className="section-title">About Me</div>
-              <div className="section-status" onClick={() => this.dropdownChange("aboutme")}> <IoIosArrowDown/> </div>
+              <div className="section-status" onClick={() => this.dropdownChange("aboutme")}> {this.state.aboutme_status} </div>
           </div>
-          <div className="dropdown">
+          <div className="aboutme" style={this.state.aboutme_style}>
+
+            Bachelor's Arts in Science from University of Nebraska - Lincoln
 
           </div>
         </div>

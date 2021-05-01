@@ -52,6 +52,10 @@
   margin-top: 5px;
 }
 
+.dropdown-aboutme {
+  display: none;
+}
+
 .portfolio-footer {
   background-color: #2B65EC;
   margin-top: 30px;
@@ -68,6 +72,8 @@
 
     .footer-table-row {
       text-align: center;
+      font-family: monospace;
+      font-size: large;
     }
 
     .footer-table-img {
@@ -75,8 +81,4 @@
     }
   }
 
-}
-
-.languages {
-  display: none;
 }
