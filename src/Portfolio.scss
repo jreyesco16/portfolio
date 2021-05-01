@@ -1,3 +1,6 @@
+.portfolio {
+  background-color: #F5F5F5;
+}
 .portfolio-header{
 
   display: inline-flex;
@@ -30,7 +33,7 @@
 
 .portfolio-section {
   background-color: #2B65EC;
-  color: white;
+  color: black;
   margin-top: 20px;
   height: 50px;
   font-size: xx-large;
@@ -55,31 +58,21 @@
   display: inline-flex;
   width: 100%;
 
-  .img-div {
-    width: 33%;
-    height: 100px;
-  }
+  .footer-table {
+    width: 100%;
 
-  .linkedin {
-    height: 100px;
-    width: 33%;
-    margin-left: 30%;
-    margin-right: 30%;
-  }
+    .footer-table-header {
+      font-family: monospace;
+      font-size: x-large;
+    }
 
-  .github {
-    height: 100px;
-    width: 33%;
-    margin-left: 30%;
-    margin-right: 30%;
-  }
+    .footer-table-row {
+      text-align: center;
+    }
 
-  .leetcode {
-    height: 70px;
-    width: 33%;
-    margin-top: 10px;
-    margin-left: 30%;
-    margin-right: 530%;
+    .footer-table-img {
+      height: 40px;
+    }
   }
 
 }

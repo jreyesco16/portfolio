@@ -5,6 +5,9 @@ import {IoIosArrowDown} from 'react-icons/io'
 import linkedin from "./linkedin-logo.png"
 import github from "./github-logo.png"
 import leetcode from './leetcode-logo.png'
+import habitatforhumanity from './habitat-for-humanity.jpg'
+import lifechurch from './austin-life-church.png'
+import peoplecitymission from './peoples-city-mission.gif'
 
 class Portfolio extends React.Component {
 
@@ -67,21 +70,61 @@ dropdownChange (data) {
         </div>
 
         <div className="portfolio-footer">
-          <div className="img-div">
-            <a href="https://www.linkedin.com/in/jessereyescortes0416/">
-              <img className="linkedin" src={linkedin} alt="linkedin" />
-            </a>
-          </div>
-          <div className="img-div">
-            <a href="https://github.com/jreyesco16">
-              <img className="github" src={github} alt="github"/>
-            </a>
-          </div>
-          <div className="img-div">
-            <a href="https://leetcode.com/jreyesco16/">
-              <img className="leetcode" src={leetcode} alt="leetcode"/>
-            </a>
-          </div>
+          <table className="footer-table">
+
+            <tr className="footer-table-header">
+              <th>History</th>
+              <th>Community</th>
+              <th>Contact</th>
+            </tr>
+            <tr className="footer-table-row">
+              <td>
+                <a href="https://www.linkedin.com/in/jessereyescortes0416/">
+                  <img className="footer-table-img" src={linkedin} alt="linkedin" />
+                </a>
+              </td>
+              <td>
+                <a href="https://pcmlincoln.org">
+                  <img className="footer-table-img" src={peoplecitymission} alt="People City Mission" />
+
+                </a>
+              </td>
+              <td>
+                jesserc.2@gmail.com
+              </td>
+            </tr>
+            <tr className="footer-table-row">
+              <td >
+                <a href="https://github.com/jreyesco16">
+                  <img className="footer-table-img" src={github} alt="github"/>
+                </a>
+              </td>
+              <td>
+                <a href="https://www.habitat.org">
+                  <img className="footer-table-img" src={habitatforhumanity} alt="Habitat for Humanity" />
+                </a>
+              </td>
+              <td>
+                (531)207-8890
+              </td>
+            </tr>
+            <tr className="footer-table-row">
+              <td>
+                <a href="https://leetcode.com/jreyesco16/">
+                  <img className="footer-table-img" src={leetcode} alt="leetcode"/>
+                </a>
+              </td>
+              <td>
+                <a href="https://www.austinlifechurch.com">
+                  <img className="footer-table-img" src={lifechurch} alt="Austin Life Church"/>
+                </a>
+              </td>
+              <td>
+                Austin TX, USA
+              </td>
+            </tr>
+
+          </table>
         </div>
 
       </div>
