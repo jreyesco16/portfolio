@@ -1,13 +1,13 @@
 import './Portfolio.scss';
 import React from 'react';
-import avatar from "./portfolio-avatar.jpg"
+import avatar from "./img/portfolio-avatar.jpg"
 import {IoIosArrowDown, IoIosArrowUp} from 'react-icons/io'
-import linkedin from "./linkedin-logo.png"
-import github from "./github-logo.png"
-import leetcode from './leetcode-logo.png'
-import habitatforhumanity from './habitat-for-humanity.jpg'
-import lifechurch from './austin-life-church.png'
-import peoplecitymission from './peoples-city-mission.gif'
+import linkedin from "./img/linkedin-logo.png"
+import github from "./img/github-logo.png"
+import leetcode from './img/leetcode-logo.png'
+import habitatforhumanity from './img/habitat-for-humanity.jpg'
+import lifechurch from './img/austin-life-church.png'
+import peoplecitymission from './img/peoples-city-mission.gif'
 
 class Portfolio extends React.Component {
 
@@ -71,8 +71,10 @@ dropdownChange (data) {
               <div className="section-title"> Computer Languages </div>
               <div className="section-status" onClick={() => this.dropdownChange("languages")}> {this.state.languages_status} </div>
           </div>
-          <div className="languages" style={this.state.languages_style}>
-            JavaScript; HTML; Java
+          <div className="languages" style={this.state.languages_style}> 
+          
+            Computer Languages : Python; JavaScript; C/C++; Java; HTML; CSS <br/> <br/>
+            Frameworks : React; Django; Flask; Express, Nginx
           </div>
 
           <div className="portfolio-section">
@@ -89,8 +91,12 @@ dropdownChange (data) {
           </div>
           <div className="aboutme" style={this.state.aboutme_style}>
 
-            Bachelor's Arts in Science from University of Nebraska - Lincoln
-
+            Hobbies : Hunting, Fishing, Reading, Fixing Cars, Computer Engineering <br/> <br/>
+            Age : 26 <br/> <br/>
+            Edcation: University of Nebraska - Lincoln <br/>
+            Bachelors of Arts in Science <br/>
+            Major: Computer Science <br/>
+            Minor: Mathematics <br/> <br/>
           </div>
         </div>
 
@@ -151,7 +157,6 @@ dropdownChange (data) {
 
           </table>
         </div>
-
       </div>
     );
   }
