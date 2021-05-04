@@ -2,11 +2,28 @@ import './Portfolio.scss';
 import React from 'react';
 import avatar from "./img/portfolio-avatar.jpg"
 import {IoIosArrowDown, IoIosArrowUp} from 'react-icons/io'
+
+import java_logo from './img/java.png'
+import c_cplusplus from './img/c.png'
+import python_logo from './img/python.png'
+import javascript from './img/javascript.png'
+import html from './img/html.png'
+import css from './img/css.png'
+import docker from './img/docker.png'
+import gunicorn from './img/gunicorn.png'
+import mysql from './img/mysql.png'
+import nginx from './img/nginx.png'
+import nodejs from './img//nodejs.png'
+import scss from './img/scss.png'
+import express from './img/expressjs.png'
+import aws from './img/aws.png'
+
 import linkedin from "./img/linkedin-logo.png"
 import github from "./img/github-logo.png"
 import leetcode from './img/leetcode-logo.png'
 import habitatforhumanity from './img/habitat-for-humanity.jpg'
 import lifechurch from './img/austin-life-church.png'
+
 import peoplecitymission from './img/peoples-city-mission.gif'
 
 class Portfolio extends React.Component {
@@ -72,9 +89,32 @@ dropdownChange (data) {
               <div className="section-status" onClick={() => this.dropdownChange("languages")}> {this.state.languages_status} </div>
           </div>
           <div className="languages" style={this.state.languages_style}> 
+
+            <br/>
           
-            Computer Languages : Python; JavaScript; C/C++; Java; HTML; CSS <br/> <br/>
-            Frameworks : React; Django; Flask; Express, Nginx
+            <img className="language" src={java_logo} alt="java logo"/>
+            <img className="language" src={c_cplusplus} alt="c/c++ logo" />
+            <img className="language" src={python_logo} alt="python logo" />
+            <img className="language" src={javascript} alt="javascript logo" />
+            <img className="language" src={html} alt="html logo" />
+            <img className="language" src={css} alt="css logo" /> 
+            <img className="language" src={mysql} alt="mysql logo" />
+            
+            <br/> <br/>
+
+            <img className="framework" src={docker} alt="docker logo" />
+            <img className="framework" src={gunicorn} alt="gunicorn logo" />
+            <br/>
+            <img className="framework" src={nginx} alt="nginx logo" />
+            <img className="framework" src={nodejs} alt="nodejs logo" />
+            <img className="framework" src={scss} alt="scss logo" />
+            <img className="framework" src={express} alt="express logo" />
+            
+            <br/>
+
+            <img className="cloud" src={aws} alt="aws logo" />
+            
+
           </div>
 
           <div className="portfolio-section">
