@@ -16,6 +16,7 @@ import nginx from './img/nginx.png'
 import nodejs from './img//nodejs.png'
 import scss from './img/scss.png'
 import express from './img/expressjs.png'
+import typescript from './img/typescript.png'
 import aws from './img/aws.png'
 
 import linkedin from "./img/linkedin-logo.png"
@@ -98,6 +99,7 @@ dropdownChange (data) {
             <img className="language" src={javascript} alt="javascript logo" />
             <img className="language" src={html} alt="html logo" />
             <img className="language" src={css} alt="css logo" /> 
+            <img className="language" src={typescript} alt="typescript logo" />
             <img className="language" src={mysql} alt="mysql logo" />
             
             <br/> <br/>
