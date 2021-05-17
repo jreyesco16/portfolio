@@ -19,12 +19,13 @@ import express from './img/expressjs.png'
 import typescript from './img/typescript.png'
 import aws from './img/aws.png'
 
+import huskers from './img/huskers.png'
+
 import linkedin from "./img/linkedin-logo.png"
 import github from "./img/github-logo.png"
 import leetcode from './img/leetcode-logo.png'
 import habitatforhumanity from './img/habitat-for-humanity.jpg'
 import lifechurch from './img/austin-life-church.png'
-
 import peoplecitymission from './img/peoples-city-mission.gif'
 
 class Portfolio extends React.Component {
@@ -89,6 +90,7 @@ dropdownChange (data) {
               <div className="section-title"> Computer Languages </div>
               <div className="section-status" onClick={() => this.dropdownChange("languages")}> {this.state.languages_status} </div>
           </div>
+          {/* LANGUAGES */}
           <div className="languages" style={this.state.languages_style}> 
 
             <br/>
@@ -123,6 +125,7 @@ dropdownChange (data) {
               <div className="section-title"> Projects </div>
               <div className="section-status" onClick={() => this.dropdownChange("projects")}> {this.state.projects_status} </div>
           </div>
+          {/* PROJECTS */}
           <div className="projects" style={this.state.projects_style}>
             Invoice System; Yahtzee Online; The Open Market
           </div>
@@ -131,14 +134,57 @@ dropdownChange (data) {
               <div className="section-title">About Me</div>
               <div className="section-status" onClick={() => this.dropdownChange("aboutme")}> {this.state.aboutme_status} </div>
           </div>
+          {/* ABOUT ME */}
           <div className="aboutme" style={this.state.aboutme_style}>
 
-            Hobbies : Hunting, Fishing, Reading, Fixing Cars, Computer Engineering <br/> <br/>
-            Age : 26 <br/> <br/>
-            Edcation: University of Nebraska - Lincoln <br/>
-            Bachelors of Arts in Science <br/>
-            Major: Computer Science <br/>
-            Minor: Mathematics <br/> <br/>
+            <table style={{width:"100%"}}>
+              <tr>
+                <th>ME</th>
+                <th>HOBBIES</th>
+                <th>AGE</th>
+              </tr>
+              <tr>
+                <td>Web Developer + Software Engineer</td>
+                <td>Hunting + Fishing</td>
+                <td>April 16, 1995</td>
+              </tr>
+              <tr>
+                <td>Austin, TX USA</td>
+                <td>Reading</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Cars</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Computer Engineering</td>
+              </tr>
+              <br/>
+              <tr>
+                <th>EDUCATION</th>
+                <th>EXPERIENCE</th>
+              </tr>
+              <tr>
+                <td>University of Nebraska - Lincoln <img style={{height: "25px"}} src={huskers} alt="husker logo"/></td>
+                <td>Theatre Invoice System</td>
+              </tr>
+              <tr>
+                <td>Major - Computer Science</td>
+                <td>Yahtzee Online</td>
+              </tr>
+              <tr>
+                <td>Minor - Mathematics</td>
+                <td>Market</td>
+              </tr>
+              <tr>
+                <td>GPA 2.7</td>
+              </tr>
+              <tr>
+                <td>2013-2020</td>
+              </tr>
+            </table>
           </div>
         </div>
 
