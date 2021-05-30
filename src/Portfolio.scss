@@ -66,8 +66,21 @@
   }
 }
 
-.dropdown-aboutme {
+.projects {
+  .project-section {
+    width: 33%;
+    text-align: center;
+  }
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.aboutme {
   display: none;
+
+  .husker-logo {
+    height: 15px;
+  }
 }
 
 .portfolio-footer {

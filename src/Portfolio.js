@@ -54,7 +54,7 @@ dropdownChange (data) {
     this.setState({languages_status: this.state.languages ? <IoIosArrowDown/> : <IoIosArrowUp/>})
     this.setState({languages : this.state.languages ? false : true})
   }else if(data==="projects"){
-    this.setState({projects_style : {display: this.state.projects ? "none" : "revert"}})
+    this.setState({projects_style : {display: this.state.projects ? "none" : "inline-flex"}})
     this.setState({projects_status: this.state.projects ? <IoIosArrowDown/> : <IoIosArrowUp/>})
     this.setState({projects : this.state.projects ? false : true})
   }else if(data==="aboutme"){
@@ -79,8 +79,6 @@ dropdownChange (data) {
             <p>
               I was introduced to computer programming while attending college at the age of 19. <br/>
               What intrigued me about programming was it allowed me to express my passion for technology.<br/>
-              As the time progressed I slowly got better and was able to accomplish things I once thought was magic.<br/>
-              Only the future will determine where I go or acheive but regardless I'll continue to develop my skills.
             </p>
           </div>
 
@@ -127,7 +125,18 @@ dropdownChange (data) {
           </div>
           {/* PROJECTS */}
           <div className="projects" style={this.state.projects_style}>
-            Invoice System; Yahtzee Online; The Open Market
+            <div className="project-section">
+              Invoice Theatre System <br/>
+              2018-2019
+            </div>
+            <div className="project-section">
+              Yahtzee Online <br/>
+              2020
+            </div>
+            <div className="project-section">
+              The Market <br/>
+              2020-Current
+            </div>
           </div>
 
           <div className="portfolio-section">
@@ -167,7 +176,7 @@ dropdownChange (data) {
                 <th>EXPERIENCE</th>
               </tr>
               <tr>
-                <td>University of Nebraska - Lincoln <img style={{height: "25px"}} src={huskers} alt="husker logo"/></td>
+                <td>University of Nebraska - Lincoln <img className="husker-logo" src={huskers} alt="husker logo"/></td>
                 <td>Theatre Invoice System</td>
               </tr>
               <tr>
