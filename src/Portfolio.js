@@ -1,5 +1,6 @@
 import './Portfolio.scss';
 import React from 'react';
+import ReactPlayer from "react-player"
 import avatar from "./img/portfolio-avatar.jpg"
 import {IoIosArrowDown, IoIosArrowUp} from 'react-icons/io'
 
@@ -126,6 +127,7 @@ dropdownChange (data) {
           {/* PROJECTS */}
           <div className="projects" style={this.state.projects_style}>
             <div className="project-section">
+              <ReactPlayer url="https://www.youtube.com/watch?v=sNumtUs8d6M"/>
               Invoice Theatre System <br/>
               2018-2019
             </div>
