@@ -55,7 +55,7 @@ dropdownChange (data) {
     this.setState({languages_status: this.state.languages ? <IoIosArrowDown/> : <IoIosArrowUp/>})
     this.setState({languages : this.state.languages ? false : true})
   }else if(data==="projects"){
-    this.setState({projects_style : {display: this.state.projects ? "none" : "inline-flex"}})
+    this.setState({projects_style : {display: this.state.projects ? "none" : "flex"}})
     this.setState({projects_status: this.state.projects ? <IoIosArrowDown/> : <IoIosArrowUp/>})
     this.setState({projects : this.state.projects ? false : true})
   }else if(data==="aboutme"){
@@ -127,15 +127,17 @@ dropdownChange (data) {
           {/* PROJECTS */}
           <div className="projects" style={this.state.projects_style}>
             <div className="project-section">
-              <ReactPlayer url="https://www.youtube.com/watch?v=sNumtUs8d6M"/>
+              <ReactPlayer  className="project-player" url="https://www.youtube.com/watch?v=sNumtUs8d6M" width="100%" height="85%"/>
               Invoice Theatre System <br/>
               2018-2019
             </div>
             <div className="project-section">
+              <ReactPlayer className="project-player" url="https://www.youtube.com/watch?v=sNumtUs8d6M" width="100%" height="85%"/>
               Yahtzee Online <br/>
               2020
             </div>
             <div className="project-section">
+              <ReactPlayer className="project-player" url="https://www.youtube.com/watch?v=sNumtUs8d6M" width="100%" height="85%"/>
               The Market <br/>
               2020-Current
             </div>
