@@ -1,5 +1,3 @@
-sudo su
-
 git pull
 
 npm run build
