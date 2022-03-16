@@ -1,11 +1,20 @@
+import Image from "next/image";
+import { Space } from "antd";
+
+import styles from "./Education.module.css"
+
 const Education = () => {
     return (
-        <div>
-            <h3>Education</h3>
-            <span>Aug 2013 - Dec 2020 University of Nebraska - Lincoln (UNL)</span> <br/>
-            <span>Bachelors in Arts and Science</span> <br/>
-            <span>Major: Computer Science</span><br/>
-            <span>Minor: Mathematics</span><br />
+        <div className={styles.body}>
+            <h2>Education</h2>
+            <Space direction="vertical" className={styles.space}>
+                <Image src={"/unl-big.png"} height={70} width={210} layout={"fixed"} alt={"unl logo"} />
+                <span>
+                    <span><strong>Attened: </strong> Fall 2013 - Fall 2020 </span> <br/>
+                    <strong>Bachelors:</strong> Arts and Science <br/>
+                    <strong>Major: </strong> Computer Science <strong>Minor:</strong> Mathematics
+                </span>
+            </Space>
         </div>
     )
 }
