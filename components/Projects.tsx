@@ -1,8 +1,11 @@
+import styles from "./Projects.module.css"
+
 const Projects = () => {
     return (
-        <div>
-            <h3>Projects</h3>
-            <span>Market Feb 2021 - Current</span>
+        <div className={styles.body}>
+            <h2>Projects</h2>
+            <span><strong>Market</strong> <br/>
+             Feb 2021 - Current</span>
         </div>
     )
 }

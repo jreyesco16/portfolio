@@ -1,8 +1,11 @@
+import styles from "./Experience.module.css"
+
 const Experience = () => {
     return (
-        <div>
-            <h3>Experience</h3>
-            <span>July 2021-Current Software Developer at Snyders Salvage </span>
+        <div className={styles.body}>
+            <h2>Experience</h2>
+            <span><strong>Software Developer</strong>: <strong>Snyders Salvage</strong> <br/>
+            July 2021-Current  </span>
         </div>
     )
 }
