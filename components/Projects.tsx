@@ -11,7 +11,7 @@ const Projects = () => {
 
             {/* YAHTZEE ONLINE */}
              <span><strong>Yahtzee Online</strong></span> <br />
-             Jan 2021 - May - 2021 <br/>
+             Jan 2021 - May 2021 <br/>
 
             {/* INVOICE SYSTEM */}
              <span><strong>Invoice System</strong></span> <br />
