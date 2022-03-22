@@ -6,11 +6,11 @@ import styles from "./Education.module.css"
 const Education = () => {
     return (
         <div className={styles.body}>
-            <h2>Education</h2>
+            <h2><strong>Education</strong></h2>
             <Space direction="vertical" className={styles.space}>
                 <Image src={"/unl-big.png"} height={70} width={210} layout={"fixed"} alt={"unl logo"} />
                 <span>
-                    <span><strong>Attened: </strong> Fall 2013 - Fall 2020 </span> <br/>
+                    <strong>Attened: </strong> Fall 2013 - Fall 2020 <br/>
                     <strong>Bachelors:</strong> Arts and Science <br/>
                     <strong>Major: </strong> Computer Science <strong>Minor:</strong> Mathematics
                 </span>
