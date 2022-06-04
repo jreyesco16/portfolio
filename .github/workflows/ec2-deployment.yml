@@ -16,10 +16,12 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Lint code
+    - name: Set up node environment
       uses: actions/setup-node@v3
       with:
         node-version: 17
+        
+    - name: Lint code
       run: npm run lint
 
     # - name: Deploy to EC2 instance
