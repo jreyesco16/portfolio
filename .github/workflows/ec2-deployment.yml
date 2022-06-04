@@ -16,6 +16,12 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Lint code
+      uses: actions/setup-node@v3
+      with:
+        node-version: 17
+      run: npm run lint
+
     # - name: Deploy to EC2 instance
     #   uses: easingthemes/ssh-deploy@v2.1.5
     #   env:
