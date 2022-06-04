@@ -27,6 +27,9 @@ jobs:
     - name: Lint code
       run: npm run lint
 
+    - name: Run tests
+      run: npm run test
+
     # - name: Deploy to EC2 instance
     #   uses: easingthemes/ssh-deploy@v2.1.5
     #   env:
