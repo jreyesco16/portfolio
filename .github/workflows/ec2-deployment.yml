@@ -33,12 +33,11 @@ jobs:
     - name: Run build
       run: npm run build
 
-    # - name: Deploy to EC2 instance
-    #   uses: easingthemes/ssh-deploy@v2.1.5
-    #   env:
-    #     SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
-    #     SOURCE: "./"
-    #     REMOTE_HOST: "ec2-44-201-254-140.compute-1.amazonaws.com"
-    #     REMOTE_USER: "ec2-user"
-    #     TARGET: "/home/ec2-user/porfolio"
+    - name: Deploy to EC2 instance
+      uses: easingthemes/ssh-deploy@main
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
+        REMOTE_HOST: ${{ secrets.HOST_DNS }}
+        REMOTE_USER: ${{ secrets.USERNAME }}
+        TARGET: ${{ secrets.TARGET_DIR }}
 
