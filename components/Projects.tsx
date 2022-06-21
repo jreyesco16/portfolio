@@ -15,7 +15,7 @@ const Projects = () => {
 
             {/* INVOICE SYSTEM */}
              <span><strong>Invoice System</strong></span> <br />
-             Fall 2018
+             August 2018 - December 2018
         </div>
     )
 }
