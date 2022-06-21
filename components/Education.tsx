@@ -10,7 +10,7 @@ const Education = () => {
             <Space direction="vertical" className={styles.space}>
                 <Image src={"/unl-big.png"} height={70} width={210} layout={"fixed"} alt={"unl logo"} />
                 <span>
-                    <strong>Attened: </strong> Fall 2013 - Fall 2020 <br/>
+                    <strong>Attened: </strong> August 2013 - December 2020 <br/>
                     <strong>Bachelors:</strong> Arts and Science <br/>
                     <strong>Major: </strong> Computer Science <strong>Minor:</strong> Mathematics
                 </span>
