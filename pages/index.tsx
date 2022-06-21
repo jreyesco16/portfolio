@@ -14,7 +14,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+
       <h1><strong>Jesse R Cortes</strong></h1>
+
 
       <Experience />
 
