@@ -11,7 +11,7 @@ const Experience = () => {
       <Title level={3}>Experience</Title>
       <Space
         direction={"vertical"}
-        style={{ padding: "1rem 2rem", width: "350px" }}
+        style={{ padding: "1rem", width: "350px" }}
       >
         <Image
           src={"/freewater-logo.png"}
@@ -22,11 +22,13 @@ const Experience = () => {
         />
         <Title level={5}>Frontend Developer: Freewater</Title>
         <Text strong>June 2022 - Current</Text>
-        <Paragraph></Paragraph>
+        <Paragraph>
+
+        </Paragraph>
       </Space>
       <Space
         direction={"vertical"}
-        style={{ padding: "1rem 2rem", width: "350px" }}
+        style={{ padding: "1rem", width: "350px" }}
       >
         <Image
           src={"/snyders-logo.png"}
@@ -41,7 +43,7 @@ const Experience = () => {
       </Space>
       <Space
         direction={"vertical"}
-        style={{ padding: "1rem 2rem", width: "350px" }}
+        style={{ padding: "1rem", width: "350px" }}
       >
         <a href="https://www.youtube.com/watch?v=czUheX_SWfk">
           <Image
