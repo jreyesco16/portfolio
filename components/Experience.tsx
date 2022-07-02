@@ -26,7 +26,7 @@ const FreeWater = () => (
         Developer.
       </p>
       <p>
-        I'm working with <strong>React</strong> to build a Design Preview which
+        I&apos;m working with <strong>React</strong> to build a Design Preview which
         allows clients to design their own labels.
       </p>
     </Paragraph>
