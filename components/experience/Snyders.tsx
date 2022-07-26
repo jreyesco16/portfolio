@@ -8,12 +8,17 @@ const { Title, Text, Paragraph, Link } = Typography;
 
 const Dashboard = () => {
   return (
-    <>
+    <Space direction={"vertical"} style={{ width: "450px", padding: "20px" }}>
       <Title level={5}>Dashboard</Title>
       <Paragraph>
         Company dashboard for Snyder&apos;s employees built with
         <strong> NextJs</strong> and <strong>Ant Design</strong> (UI library)
+        <br/>
+        <Link href={"https://snyderdash.wrenchapart.com/"}>
+          Snyders Dashboard
+        </Link>
         <br />
+        <br/>
         <ul>
           <li>
             Configured the pre-existing email system with
@@ -49,20 +54,20 @@ const Dashboard = () => {
             deployment
           </li>
         </ul>
-        <Link href={"https://snyderdash.wrenchapart.com/"}>
-          Snyders Dashboard
-        </Link>
+        
       </Paragraph>
-    </>
+    </Space>
   );
 };
 
 const WrenchAPart = () => {
   return (
-    <>
-      <Title level={5}>
-        Wrench-A-Part (<strong>Svelte</strong>)
-      </Title>
+    <Space
+      direction={"vertical"}
+      style={{ width: "450px", padding: "20px" }}
+      align={"baseline"}
+    >
+      <Title level={5}>Wrench-A-Part</Title>
       <Paragraph>
         <ul>
           <li>
@@ -83,16 +88,14 @@ const WrenchAPart = () => {
         </ul>
         <Link href={"https://wrenchapart.com/"}>Wrench-A-Part</Link>
       </Paragraph>
-    </>
+    </Space>
   );
 };
 
 const MyWrenchAPart = () => {
   return (
-    <>
-      <Title level={5}>
-        MyWrench-A-Part (<strong>Svelte</strong>)
-      </Title>
+    <Space direction={"vertical"} style={{ width: "450px", padding: "20px" }}>
+      <Title level={5}>MyWrench-A-Part</Title>
       <Paragraph>
         <ul>
           <li>
@@ -114,16 +117,14 @@ const MyWrenchAPart = () => {
         </ul>
         <Link href={"https://my.wrenchapart.com/"}>MyWrench-A-Part</Link>
       </Paragraph>
-    </>
+    </Space>
   );
 };
 
 const DataExtractors = () => {
   return (
-    <>
-      <Title level={5}>
-        Data Extractors (<strong>Golang</strong>)
-      </Title>
+    <Space direction={"vertical"} style={{ width: "450px", padding: "20px" }}>
+      <Title level={5}>Data Extractors</Title>
       <Paragraph>
         <ul>
           <li>
@@ -138,14 +139,14 @@ const DataExtractors = () => {
           </li>
         </ul>
       </Paragraph>
-    </>
+    </Space>
   );
 };
 
 const CompanyVisualMetrics = () => {
   return (
-    <>
-      <Title level={5}>Company Visual Metrics (BigQuery + Domo)</Title>
+    <Space direction={"vertical"} style={{ width: "450px", padding: "20px" }}>
+      <Title level={5}>Company Visual Metrics </Title>
       <Paragraph>
         <ul>
           <li>
@@ -172,7 +173,7 @@ const CompanyVisualMetrics = () => {
           </li>
         </ul>
       </Paragraph>
-    </>
+    </Space>
   );
 };
 
@@ -188,11 +189,13 @@ const Snyders = () => (
     <Title level={4}>Junior Developer: Snyders Salvage</Title>
     <Text strong>June 2021 - Current</Text>
     <Paragraph>
-      <Dashboard />
-      <WrenchAPart />
-      <MyWrenchAPart />
-      <DataExtractors />
-      <CompanyVisualMetrics />
+      <Space direction="horizontal" align="start" wrap={false}>
+        <Dashboard />
+        <WrenchAPart />
+        <MyWrenchAPart />
+        <DataExtractors />
+        <CompanyVisualMetrics />
+      </Space>
     </Paragraph>
   </Space>
 );
