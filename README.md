@@ -26,6 +26,10 @@ ssh -i ./path/to/.pem ec2-user@44.201.254.140
 
 ## Run PM2 on EC2 Instance
 
+```
+sudo -i pm2 [command]
+```
+
 ## Edit Nginx Configs
 
 ```
