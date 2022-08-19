@@ -23,3 +23,23 @@ yarn dev
 ```
 ssh -i ./path/to/.pem ec2-user@44.201.254.140
 ```
+
+## Run PM2 on EC2 Instance
+
+## Edit Nginx Configs
+
+```
+sudo vi nginx.conf
+```
+
+References:
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html
+
+https://nextjs.org/
+
+https://ant.design/
+
+https://pm2.keymetrics.io/
+
+https://www.nginx.com/
