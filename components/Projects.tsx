@@ -6,15 +6,10 @@ const Projects = () => {
       <h2>
         <strong>Projects</strong>
       </h2>
-      {/* PORTFOLIO */}
-      <span>
-        Portfolio (<strong>NextJS</strong>) January 2022-Preset
-        <br />
-      </span>
       <br />
       {/* MARKET */}
       <span>
-        Market (<strong>React</strong> + <strong>Django</strong>) Feb 2021 -
+        Market (<strong>Svelte</strong> + <strong>Rust</strong>) Feb 2021 -
         Current
         <br />
       </span>
@@ -22,6 +17,11 @@ const Projects = () => {
       {/* YAHTZEE ONLINE */}
       <span>
         Yahtzee Online (<strong>Java</strong>) Jan 2021 - May 2021
+        <br />
+      </span>
+      <br />
+      <span>
+        Regular Phil (<strong>React + Django</strong> August 2020 - May 2021)
         <br />
       </span>
       <br />

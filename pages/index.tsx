@@ -4,11 +4,9 @@ import AboutMe from "../components/AboutMe";
 import Education from "../components/Education";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
-import Image from "next/image";
-import { Space, Typography, Card } from "antd";
-import { Avatar } from "antd";
+import { Typography } from "antd";
 
-const { Title, Text, Paragraph } = Typography;
+const { Title } = Typography;
 
 const Home: NextPage = () => {
   return (

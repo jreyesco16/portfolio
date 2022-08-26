@@ -13,12 +13,6 @@ const Dashboard = () => {
       <Paragraph>
         Company dashboard for Snyder&apos;s employees built with
         <strong> NextJs</strong> and <strong>Ant Design</strong> (UI library)
-        <br/>
-        <Link href={"https://snyderdash.wrenchapart.com/"}>
-          Snyders Dashboard
-        </Link>
-        <br />
-        <br/>
         <ul>
           <li>
             Configured the pre-existing email system with
@@ -54,7 +48,9 @@ const Dashboard = () => {
             deployment
           </li>
         </ul>
-        
+        <Link href={"https://snyderdash.wrenchapart.com/"}>
+          Snyders Dashboard
+        </Link>
       </Paragraph>
     </Space>
   );
@@ -189,11 +185,15 @@ const Snyders = () => (
     <Title level={4}>Junior Developer: Snyders Salvage</Title>
     <Text strong>June 2021 - Current</Text>
     <Paragraph>
-      <Space direction="horizontal" align="start" wrap={false}>
+      <Space direction="horizontal" align="start">
         <Dashboard />
         <WrenchAPart />
+      </Space>
+      <Space direction="horizontal" align="start">
         <MyWrenchAPart />
         <DataExtractors />
+      </Space>
+      <Space direction="horizontal" align="start">
         <CompanyVisualMetrics />
       </Space>
     </Paragraph>
