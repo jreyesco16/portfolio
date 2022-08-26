@@ -21,7 +21,7 @@ const Projects = () => {
       </span>
       <br />
       <span>
-        Regular Phil (<strong>React + Django</strong> August 2020 - May 2021)
+        Regular Phil (<strong>React + Django</strong> August 2019 - May 2020)
         <br />
       </span>
       <br />
