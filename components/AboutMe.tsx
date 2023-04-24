@@ -14,7 +14,7 @@ const AboutMe = () => {
         <br />
         <strong>From:</strong> Lincoln, NE USA 1999 - 2020
         <br />
-        <strong>Current:</strong> Austin, TX USA 2021-Current
+        <strong>Current:</strong> Lincoln, NE USA 2021-Current
       </span>
       <br />
       <br />
