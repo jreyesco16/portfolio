@@ -10,7 +10,7 @@ const { Title, Text, Paragraph, Link } = Typography;
 const Experience = () => {
   return (
     <div className={styles.body}>
-      <Title level={3}>Experience (TEST)</Title>
+      <Title level={3}>Experience</Title>
       <Snyders />
     </div>
   );
