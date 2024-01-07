@@ -21,19 +21,28 @@ pnpm dev
 `.pem file is required`
 
 ```
-ssh -i ./path/to/.pem ec2-user@44.201.254.140
+ssh -i ./path/to/file.pem ec2-user@34.225.39.159
 ```
 
 ## Run PM2 on EC2 Instance
 
+start production server
+
 ```
-sudo -i pm2 [command]
+pm2 start npm --name "portfolio" -- start --watch
 ```
+
+stop and delete server
+
+```
+pm2 delete [app name]
+```
+
 
 ## Edit Nginx Configs
 
 ```
-sudo vi nginx.conf
+sudo vi your-site.conf
 ```
 
 References:
