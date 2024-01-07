@@ -57,6 +57,7 @@ declare module '$env/static/private' {
 	export const SSH_AUTH_SOCK: string;
 	export const __CF_USER_TEXT_ENCODING: string;
 	export const npm_package_devDependencies_eslint: string;
+	export const npm_package_scripts_coverage: string;
 	export const npm_package_devDependencies__typescript_eslint_eslint_plugin: string;
 	export const npm_package_devDependencies_tslib: string;
 	export const npm_execpath: string;
@@ -77,6 +78,7 @@ declare module '$env/static/private' {
 	export const npm_package_devDependencies__sveltejs_vite_plugin_svelte: string;
 	export const NODE_PATH: string;
 	export const npm_package_scripts_build: string;
+	export const npm_package_devDependencies__vitest_coverage_v8: string;
 	export const XPC_FLAGS: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const npm_package_devDependencies_vitest: string;
@@ -104,7 +106,13 @@ declare module '$env/static/private' {
 	export const npm_package_scripts_check: string;
 	export const COLORTERM: string;
 	export const npm_node_execpath: string;
+	export const TEST: string;
+	export const VITEST: string;
 	export const NODE_ENV: string;
+	export const PROD: string;
+	export const DEV: string;
+	export const BASE_URL: string;
+	export const MODE: string;
 }
 
 /**
@@ -167,6 +175,7 @@ declare module '$env/dynamic/private' {
 		SSH_AUTH_SOCK: string;
 		__CF_USER_TEXT_ENCODING: string;
 		npm_package_devDependencies_eslint: string;
+		npm_package_scripts_coverage: string;
 		npm_package_devDependencies__typescript_eslint_eslint_plugin: string;
 		npm_package_devDependencies_tslib: string;
 		npm_execpath: string;
@@ -187,6 +196,7 @@ declare module '$env/dynamic/private' {
 		npm_package_devDependencies__sveltejs_vite_plugin_svelte: string;
 		NODE_PATH: string;
 		npm_package_scripts_build: string;
+		npm_package_devDependencies__vitest_coverage_v8: string;
 		XPC_FLAGS: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		npm_package_devDependencies_vitest: string;
@@ -214,7 +224,13 @@ declare module '$env/dynamic/private' {
 		npm_package_scripts_check: string;
 		COLORTERM: string;
 		npm_node_execpath: string;
+		TEST: string;
+		VITEST: string;
 		NODE_ENV: string;
+		PROD: string;
+		DEV: string;
+		BASE_URL: string;
+		MODE: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}
