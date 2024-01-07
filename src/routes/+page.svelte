@@ -1,5 +1,5 @@
 <script>
-	import Experience from 'components/Experience.svelte';
+	import Experience from 'components/experience/index.svelte';
 	import Projects from 'components/Projects.svelte';
 	import Education from 'components/Education.svelte';
 	import Aboutme from 'components/Aboutme.svelte';
@@ -8,6 +8,7 @@
 
 <svelte:head>
 	<title>Jesse R Cortes</title>
+
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
