@@ -3,6 +3,7 @@
 	import Projects from 'components/Projects.svelte';
 	import Education from 'components/Education.svelte';
 	import Aboutme from 'components/Aboutme.svelte';
+	import Certification from 'components/Certification.svelte';
 </script>
 
 <svelte:head>
@@ -13,6 +14,7 @@
 <body>
 	<Experience />
 	<Education />
+	<Certification />
 	<Projects />
 	<Aboutme />
 </body>

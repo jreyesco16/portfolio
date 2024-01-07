@@ -79,6 +79,7 @@ declare module '$env/static/private' {
 	export const npm_package_devDependencies__sveltejs_vite_plugin_svelte: string;
 	export const NODE_PATH: string;
 	export const npm_package_scripts_build: string;
+	export const npm_package_scripts_start: string;
 	export const npm_package_devDependencies__vitest_coverage_v8: string;
 	export const XPC_FLAGS: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
@@ -191,6 +192,7 @@ declare module '$env/dynamic/private' {
 		npm_package_devDependencies__sveltejs_vite_plugin_svelte: string;
 		NODE_PATH: string;
 		npm_package_scripts_build: string;
+		npm_package_scripts_start: string;
 		npm_package_devDependencies__vitest_coverage_v8: string;
 		XPC_FLAGS: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
