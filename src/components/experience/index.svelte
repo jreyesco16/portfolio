@@ -1,5 +1,6 @@
 <script lang="ts">
 	// doing ts stuff here
+	import Section from './Section.svelte';
 </script>
 
 <body>
@@ -9,6 +10,8 @@
 		<strong>Snyder's Certified Auto & Truck Parts</strong> <br />
 		Austin, TX USA - June 2021 - Present
 	</span>
+
+	<Section />
 </body>
 
 <style>

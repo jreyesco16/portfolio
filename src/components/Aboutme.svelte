@@ -1,10 +1,12 @@
 <script lang="ts">
 	// doing ts stuff here
+
+	import src from 'lib/images/jesse.jpeg';
 </script>
 
 <body>
 	<h1><a id="aboutme">About Me</a></h1>
-	<img src="jesse.jpeg" alt="Jesse R Cortes" width="200" height="200" /> <br /> <br />
+	<img {src} alt="Jesse R Cortes" width="200" height="200" /> <br /> <br />
 
 	<span>
 		<strong>Born:</strong> Red Bluff, CA April 16, 1995
