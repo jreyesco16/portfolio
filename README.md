@@ -38,7 +38,6 @@ stop and delete server
 pm2 delete [app name]
 ```
 
-
 ## Edit Nginx Configs
 
 ```

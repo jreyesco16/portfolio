@@ -1,5 +1,4 @@
 <script>
-
 </script>
 
 <header>
@@ -24,5 +23,4 @@
 	a:hover {
 		color: grey;
 	}
-	
 </style>

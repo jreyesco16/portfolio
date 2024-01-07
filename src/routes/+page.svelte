@@ -1,8 +1,8 @@
 <script>
-	import Experience from "components/Experience.svelte";
-	import Projects from "components/Projects.svelte";
-	import Education from "components/Education.svelte";
-	import Aboutme from "components/Aboutme.svelte";
+	import Experience from 'components/Experience.svelte';
+	import Projects from 'components/Projects.svelte';
+	import Education from 'components/Education.svelte';
+	import Aboutme from 'components/Aboutme.svelte';
 </script>
 
 <svelte:head>
@@ -16,7 +16,6 @@
 	<Projects />
 	<Aboutme />
 </body>
-
 
 <style>
 </style>
