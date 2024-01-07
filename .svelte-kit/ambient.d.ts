@@ -65,6 +65,7 @@ declare module '$env/static/private' {
 	export const npm_config_frozen_lockfile: string;
 	export const npm_package_devDependencies__typescript_eslint_parser: string;
 	export const PATH: string;
+	export const npm_package_devDependencies__sveltejs_adapter_node: string;
 	export const npm_package_devDependencies__neoconfetti_svelte: string;
 	export const npm_config_engine_strict: string;
 	export const __CFBundleIdentifier: string;
@@ -85,7 +86,6 @@ declare module '$env/static/private' {
 	export const npm_package_devDependencies_eslint_config_prettier: string;
 	export const XPC_SERVICE_NAME: string;
 	export const npm_package_version: string;
-	export const npm_package_devDependencies__sveltejs_adapter_auto: string;
 	export const VSCODE_INJECTION: string;
 	export const npm_package_devDependencies_svelte_check: string;
 	export const HOME: string;
@@ -106,13 +106,7 @@ declare module '$env/static/private' {
 	export const npm_package_scripts_check: string;
 	export const COLORTERM: string;
 	export const npm_node_execpath: string;
-	export const TEST: string;
-	export const VITEST: string;
 	export const NODE_ENV: string;
-	export const PROD: string;
-	export const DEV: string;
-	export const BASE_URL: string;
-	export const MODE: string;
 }
 
 /**
@@ -183,6 +177,7 @@ declare module '$env/dynamic/private' {
 		npm_config_frozen_lockfile: string;
 		npm_package_devDependencies__typescript_eslint_parser: string;
 		PATH: string;
+		npm_package_devDependencies__sveltejs_adapter_node: string;
 		npm_package_devDependencies__neoconfetti_svelte: string;
 		npm_config_engine_strict: string;
 		__CFBundleIdentifier: string;
@@ -203,7 +198,6 @@ declare module '$env/dynamic/private' {
 		npm_package_devDependencies_eslint_config_prettier: string;
 		XPC_SERVICE_NAME: string;
 		npm_package_version: string;
-		npm_package_devDependencies__sveltejs_adapter_auto: string;
 		VSCODE_INJECTION: string;
 		npm_package_devDependencies_svelte_check: string;
 		HOME: string;
@@ -224,13 +218,7 @@ declare module '$env/dynamic/private' {
 		npm_package_scripts_check: string;
 		COLORTERM: string;
 		npm_node_execpath: string;
-		TEST: string;
-		VITEST: string;
 		NODE_ENV: string;
-		PROD: string;
-		DEV: string;
-		BASE_URL: string;
-		MODE: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}
