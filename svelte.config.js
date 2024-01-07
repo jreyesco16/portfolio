@@ -16,8 +16,8 @@ const config = {
 			// If you have external deps that are not resolved by vite, you can try to add them here.
 			// See https://vitejs.dev/config/#resolve-alias for more information.
 			// Example: `foo: resolve('node_modules/foo')`
-			"components": "./src/components",
-			"lib": "./src/lib",
+			components: './src/components',
+			lib: './src/lib'
 		}
 	}
 };
